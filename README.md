@@ -29,6 +29,22 @@ JAVA-API
 String str = "字符串";编译器会使用该值创建一个 String 对象，且这个字符串不可变，修改字符串就是在常量池中新建一个对象
 String str=new String("字符串")等价于上边的写法
 
+正则表达式
+    属于java.util.regex
+    ^以什么开头
+    $以什么结尾
+    [0-9A-Za-z]数字大小写字母任意一个字符
+    +一个或者多个
+    ?一个或者没有
+    {n}固定有N个
+    {n,m}有n或者到m个
+    .表示任意字符
+    |或者
+    \w 匹配单词字符    \W非单词
+    \d 匹配数字        \D非数字
+    \s 匹配空格        \S非空格
+    
+
   顶级对象Object：
        JAVA得类最顶级的都是继承Object，Object内置一些常用方法，例如toString，我们现在用的stringbuilder等方法都是重写Object的toString方法，
        equal：是只比较内容，不比较对象的
@@ -45,6 +61,20 @@ String str=new String("字符串")等价于上边的写法
       Boolean booclass=new Boolean()
       Long longclass=new Long()
  byte,short,char—> int —> long—> float —> double 
+ 
+ 
+ 日期操作：
+    属于java.text.Date
+    //获取到1970年零点零时到现在的英文时间
+    Date d=new Date()
+    //获取所有的毫秒数
+    d.getTime()
+    //将时间至回到初始值
+    d.setTime(0);		
+    
+   canlender类
+		
+    
  
      
     
