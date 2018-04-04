@@ -36,10 +36,10 @@ String str=new String("字符串")等价于上边的写法
        八种基本类型是不能用面向对象的方法继承的，所有JAVA封装好了一些类用于包装基本类型到对象，成为包装类，
   八种包装类
      属于Java.lang包
-      Interge intclass=new Interge(整形)
+      Interger intclass=new Interger(整形)
       Double douclass=new Double(双精度浮点数)
       Float floatclass=new Float(单精度浮点数)
-      Charact charclass=new Charact(char字符)
+      Character charclass=new Character(char字符)
       Short shortclass=new Short()
       Byte byteclass=new Byte()
       Boolean booclass=new Boolean()
