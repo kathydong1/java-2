@@ -70,9 +70,25 @@ String str=new String("字符串")等价于上边的写法
     //获取所有的毫秒数
     d.getTime()
     //将时间至回到初始值
-    d.setTime(0);		
+    d.setTime(0);
+    //Date与String的互转用法，这里需要用到SimpleDateFormat
+     属于java.text.SimpleDateFormat;
+     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+     String dateString = formatter.format(d);
+     System.out.println(dateString);
+     Date date = formatter.parse(dateString);
     
-   canlender类
+    
+    由于Date类中将getYear(),getMonth()等获取年、月、日的方法都废弃了
+    所以要借助于Calendar来获取年、月、日、周等比较常用的日期格式
+   canlender类,该类不能被new
+   String reg="yyyy-MM-dd HH-mm-ss"
+   //获取到时间
+   Canlender.getInstance()
+   //canlender类转字符串
+   Date cd=Canlender.format(reg)
+   
+   
 		
     
  
