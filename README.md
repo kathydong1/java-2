@@ -89,6 +89,48 @@ String str=new String("字符串")等价于上边的写法
    Date cd=Canlender.format(reg)
    
    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   Java多线程
+       进程：1个CPU只能运行一个进程，一个进程至少有一个线程
+       线程声明周期
+           start--->runnable---->running---->dead
+       声明线程的两种方法
+       //直接extends Thread然后实现run方法
+       class A extends Thread{
+          public void run{
+	  }
+        }
+      //实现runnable接口，然后传入runnable参数
+      class  R implements Runnable{
+            public void run{
+	    }
+       }
+       Thread  T=new Thread(R)
+       
+       
+      //匿名多线程
+      Thread T=new Thread(){
+         public void run{
+	 //运行代码
+	 }
+      }
+      T.start()------>开启一个线程
+      T.sleep(毫秒数)---类似定时器延迟该线程的running到runnable状态，结束后进入runnable状态
+      T.getId()----->获取线程的唯一标识
+      T.getName()----->获取线程的名字
+      T.getPriority()----->获取线程的优先级    一般线程优先级是0-10，默认是优先级越高，系统分配的时间越多一些
+      T.isAlive()------>返回布尔值，判断是否是在运行状态
+      T.Deaom()------>返回布尔值，判断是否是守护进程    设置守护进程  T.setDeaom(),     当所有前台线程结束后，守护线程不管是否在运行，都默认结束
+      
 		
     
  
